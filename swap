@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+    int a,b;
+    printf("Enter two numbers:\n");
+    printf("a = ");
+    scanf("%d",&a);
+    printf("b = ");
+    scanf("%d",&b);
+    printf("before swap:");
+    printf("\na = %d",a);
+    printf("\nb = %d",b);
+    //the next 3 lines swap the 2 nos.
+    a=a+b;    
+    b=a-b;   
+    a=a-b;  
+    printf("\nafter swap:");
+    printf("\na = %d",a);
+    printf("\nb = %d",b);
+    return 0;
+    
+}
