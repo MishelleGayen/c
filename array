@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+int main()
+{
+    int i,j,m[10][10];
+    printf("Input elements in the matrix:\n");
+    //for loop scans the input elements of matrix
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("element - [");
+            printf("%d",i);
+            printf("][");
+            printf("%d",j);
+            printf("]:");
+            scanf("%d",&m[i][j]);
+        }
+    }
+    printf("The matrix is:\n");
+    //for loop prints the matrix
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            
+            printf("%d\t",m[i][j]);
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
