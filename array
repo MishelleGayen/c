@@ -28,6 +28,10 @@ int main()
         }
         printf("\n");
     }
-    
+    //sum of diagonal elements
+    sum_d1=m[0][0]+m[1][1]+m[2][2];
+    sum_d1=m[0][2]+m[1][1]+m[2][0];
+    printf("Sum of diagonal 1=",sum_d1);
+    printf("Sum of diagonal 2=",sum_d2);
     return 0;
 }
