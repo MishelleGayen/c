@@ -1,8 +1,8 @@
-#include<stdio.h>
+ #include<stdio.h>
 
 int main()
 {
-    int i,j,m[10][10];
+    int i,j,m[10][10],sum_d1,sum_d2;
     printf("Input elements in the matrix:\n");
     //for loop scans the input elements of matrix
     for(i=0;i<3;i++)
@@ -29,9 +29,9 @@ int main()
         printf("\n");
     }
     //sum of diagonal elements
-    sum_d1=m[0][0]+m[1][1]+m[2][2];
-    sum_d1=m[0][2]+m[1][1]+m[2][0];
-    printf("Sum of diagonal 1=",sum_d1);
-    printf("Sum of diagonal 2=",sum_d2);
+    sum_d1=(m[0][0]+m[1][1]+m[2][2]);
+    sum_d2=(m[0][2]+m[1][1]+m[2][0]);
+    printf("Sum of diagonal 1=%d",sum_d1);
+    printf("\nSum of diagonal 2=%d",sum_d2);
     return 0;
 }
