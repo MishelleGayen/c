@@ -1,0 +1,35 @@
+# include <stdio.h> 
+# include <string.h> 
+   
+int main( ) 
+{ 
+    FILE *fptr; 
+    char c[50]="My Captain"; 
+   
+    fptr = fopen("file.txt","w"); 
+      
+    if ( fptr == NULL ) 
+    { 
+        printf("file.txt failed to open."); 
+    } 
+    else
+    { 
+        printf("The file is now opened.\n"); 
+           
+        if ( strlen (  c  ) > 0 ) 
+        {
+            fputs( c, fptr) ;    
+            fputs("\n", fptr) ; 
+        }
+ 
+        fclose(fptr) ; 
+    } 
+    
+    //reverse the string in the file
+    strrev(c);
+    printf("Output:\n")
+    printf(c);
+
+    return 0;
+}   
+  
