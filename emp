@@ -1,0 +1,53 @@
+#include<stdio.h>
+
+struct emp
+{
+    char en[20];
+    int eage;
+    int eph;
+    float es;
+};
+
+int main()
+{
+    int j;
+    struct emp e,e1,e2;
+    
+    //scans the input-details of employee
+    printf("Enter details of employee 1");
+    printf("\nName:");
+    scanf("%s",&e.en);
+    printf("Age:");
+    scanf("%d",&e.eage);
+    printf("Phone No.:");
+    scanf("%d",&e.eph);
+    printf("Salary:");
+    scanf("%f",&e.es);
+    printf("Enter details of employee 2");
+    printf("\nName:");
+    scanf("%s",&e1.en);
+    printf("Age:");
+    scanf("%d",&e1.eage);
+    printf("Phone No.:");
+    scanf("%d",&e1.eph);
+    printf("Salary:");
+    scanf("%f",&e1.es);
+    printf("\n");
+    printf("Enter details of employee 3");
+    printf("\nName:");
+    scanf("%s",&e2.en);
+    printf("Age:");
+    scanf("%d",&e2.eage);
+    printf("Phone No.:");
+    scanf("%d",&e2.eph);
+    printf("Salary:");
+    scanf("%f",&e2.es);
+    printf("\n");
+    printf("\n");
+
+    //prints the details of employee
+    printf("Name Age Phone Number Salary\n%s\t%d\t%d\t%f",e.en,e.eage,e.eph,e.es);
+    printf("\n%s\t%d\t%d\t%f",e1.en,e1.eage,e1.eph,e1.es);
+    printf("\n%s\t%d\t%d\t%f",e2.en,e2.eage,e2.eph,e2.es);
+     
+}
