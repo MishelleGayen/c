@@ -27,7 +27,7 @@ int main( )
     
     //reverse the string in the file
     strrev(c);
-    printf("Output:\n")
+    printf("Output:\n");
     printf(c);
 
     return 0;
