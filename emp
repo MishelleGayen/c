@@ -10,7 +10,6 @@ struct emp
 
 int main()
 {
-    int j;
     struct emp e,e1,e2;
     
     //scans the input-details of employee
